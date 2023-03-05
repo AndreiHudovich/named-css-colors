@@ -1,0 +1,56 @@
+{
+  "name": "named-css-colors",
+  "version": "1.0.0",
+  "description": "Named CSS colors utilities",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16.x"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "build": "rimraf ./dist && tsc",
+    "lint:tsc": "tsc --noEmit --skipLibCheck",
+    "lint:eslint": "eslint --ext .ts --max-warnings 0 .",
+    "lint:prettier": "prettier --check .",
+    "format:prettier": "prettier --write ."
+  },
+  "files": [],
+  "author": {
+    "name": "Andrei Hudovich",
+    "email": "andrei.hudovich@gmail.com",
+    "url": "https://hudovich.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrei-hudovich/named-css-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrei-hudovich/named-css-colors/issues"
+  },
+  "homepage": "https://github.com/andrei-hudovich/named-css-colors#readme",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "named",
+    "names",
+    "colors",
+    "color"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@hudovich/prettier-config": "^1.0.0",
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4",
+    "rimraf": "^4.3.0",
+    "typescript": "^4.9.5"
+  }
+}
