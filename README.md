@@ -3,6 +3,21 @@
 A set of utilities to work with named colors defined in the latest [CSS Color Module](https://w3c.github.io/csswg-drafts/css-color/#named-colors).
 
 
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [API - Core](#api---core)
+  - [isNamedColor](#isnamedcolor)
+  - [getNamedColors](#getnamedcolors)
+  - [getNamedColorsIdentifiers](#getnamedcolorsidentifiers)
+  - [getNamedColorsHexs](#getnamedcolorshexs)
+- [API Types](#api---types)
+  - [NamedColor](#namedcolor)
+- [Notes](#notes)
+- [License](#license)
+
+
 ## Features
 
 - ☂️ Fully-typed (written in Typescript)
