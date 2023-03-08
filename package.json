@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Named CSS colors utilities",
   "type": "module",
+  "main": "./dist/index.js",
   "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "sideEffects": false,
   "engines": {
     "node": ">=16.x"
@@ -17,7 +19,9 @@
     "lint:prettier": "prettier --check .",
     "format:prettier": "prettier --write ."
   },
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "Andrei Hudovich",
     "email": "andrei.hudovich@gmail.com",
