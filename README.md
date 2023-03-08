@@ -1,5 +1,8 @@
 # CSS Named Colors utilities
 
+![license](https://img.shields.io/github/license/andrei-hudovich/named-css-colors?color=FCA311&label=)
+![npm version](https://img.shields.io/github/package-json/v/andrei-hudovich/named-css-colors/main?color=FCA311&label=)
+
 A set of utilities to work with named colors defined in the latest [CSS Color Module](https://w3c.github.io/csswg-drafts/css-color/#named-colors).
 
 
