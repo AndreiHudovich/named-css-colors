@@ -1,10 +1,9 @@
-import {
+export {
   namedColors,
   namedColorsIdentifiers,
   namedColorsHexs
 } from './colors.js'
-import { isNamedColor } from './utils.js'
-import type { NamedColor } from './types'
 
-export { namedColors, namedColorsIdentifiers, namedColorsHexs, isNamedColor }
-export type { NamedColor }
+export { isNamedColor } from './utils.js'
+
+export type { NamedColor } from './types'
