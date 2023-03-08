@@ -1,7 +1,7 @@
 export {
-  namedColors,
-  namedColorsIdentifiers,
-  namedColorsHexs
+  getNamedColors,
+  getNamedColorsIdentifiers,
+  getNamedColorsHexs
 } from './colors.js'
 
 export { isNamedColor } from './utils.js'

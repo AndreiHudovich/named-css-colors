@@ -165,4 +165,14 @@ Object.freeze(namedColors)
 Object.freeze(namedColorsIdentifiers)
 Object.freeze(namedColorsHexs)
 
-export { namedColors, namedColorsIdentifiers, namedColorsHexs }
+export function getNamedColors(): NamedColors {
+  return namedColors
+}
+
+export function getNamedColorsIdentifiers(): NamedColorsIdentifiers {
+  return namedColorsIdentifiers
+}
+
+export function getNamedColorsHexs(): NamedColorsHexs {
+  return namedColorsHexs
+}

@@ -1,4 +1,4 @@
-import { namedColorsIdentifiers } from './colors.js'
+import { getNamedColorsIdentifiers } from './colors.js'
 
 export function isNamedColor(color: string): boolean {
   if (typeof color !== 'string')
@@ -7,6 +7,7 @@ export function isNamedColor(color: string): boolean {
     )
 
   const normalizedColor = color.toLowerCase()
+  const namedColorsIdentifiers = getNamedColorsIdentifiers()
 
   return namedColorsIdentifiers.includes(normalizedColor)
 }

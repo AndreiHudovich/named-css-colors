@@ -1,10 +1,12 @@
 import {
-  namedColors,
-  namedColorsHexs,
-  namedColorsIdentifiers
+  getNamedColors,
+  getNamedColorsIdentifiers,
+  getNamedColorsHexs
 } from '../src/colors'
 
-describe('namedColors', () => {
+describe('getNamedColors return value', () => {
+  const namedColors = getNamedColors()
+
   test('is an object', () => {
     expect(
       Object.prototype.toString.call(namedColors) === '[object Object]'
@@ -22,25 +24,9 @@ describe('namedColors', () => {
   })
 })
 
-describe('namedColorsHexs', () => {
-  test('is an array', () => {
-    expect(Array.isArray(namedColorsHexs)).toBe(true)
-  })
+describe('getNamedColorsIdentifiers return value', () => {
+  const namedColorsIdentifiers = getNamedColorsIdentifiers()
 
-  test('is readonly', () => {
-    // @ts-expect-error: !
-    expect(() => (namedColorsHexs[0] = '#000')).toThrow(TypeError)
-  })
-
-  test('is not extensible', () => {
-    expect(
-      // @ts-expect-error: !
-      () => (namedColorsHexs[namedColorsHexs.length + 1] = '#333')
-    ).toThrow(TypeError)
-  })
-})
-
-describe('namedColorsIdentifiers', () => {
   test('is an array', () => {
     expect(Array.isArray(namedColorsIdentifiers)).toBe(true)
   })
@@ -55,6 +41,26 @@ describe('namedColorsIdentifiers', () => {
       () =>
         // @ts-expect-error: !
         (namedColorsIdentifiers[namedColorsIdentifiers.length + 1] = 'greycat')
+    ).toThrow(TypeError)
+  })
+})
+
+describe('namedColorsHexs return value', () => {
+  const namedColorsHexs = getNamedColorsHexs()
+
+  test('is an array', () => {
+    expect(Array.isArray(namedColorsHexs)).toBe(true)
+  })
+
+  test('is readonly', () => {
+    // @ts-expect-error: !
+    expect(() => (namedColorsHexs[0] = '#000')).toThrow(TypeError)
+  })
+
+  test('is not extensible', () => {
+    expect(
+      // @ts-expect-error: !
+      () => (namedColorsHexs[namedColorsHexs.length + 1] = '#333')
     ).toThrow(TypeError)
   })
 })
