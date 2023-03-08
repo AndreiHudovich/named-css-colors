@@ -1,6 +1,6 @@
 {
   "name": "named-css-colors",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Named CSS colors utilities",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,6 +12,8 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "release": "np",
     "build": "rimraf ./dist && tsc",
     "test": "jest",
     "lint:tsc": "tsc --noEmit --skipLibCheck",
@@ -60,5 +62,8 @@
     "rimraf": "^4.3.0",
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
+  },
+  "np": {
+    "contents": "dist"
   }
 }
