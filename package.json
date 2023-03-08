@@ -1,15 +1,19 @@
 {
   "name": "named-css-colors",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Named CSS colors utilities",
   "type": "module",
+  "main": "./dist/index.js",
   "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "sideEffects": false,
   "engines": {
     "node": ">=16.x"
   },
   "scripts": {
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "release": "np",
     "build": "rimraf ./dist && tsc",
     "test": "jest",
     "lint:tsc": "tsc --noEmit --skipLibCheck",
@@ -17,7 +21,9 @@
     "lint:prettier": "prettier --check .",
     "format:prettier": "prettier --write ."
   },
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "Andrei Hudovich",
     "email": "andrei.hudovich@gmail.com",
@@ -56,5 +62,8 @@
     "rimraf": "^4.3.0",
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
+  },
+  "np": {
+    "contents": "dist"
   }
 }
