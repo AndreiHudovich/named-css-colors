@@ -48,7 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "@hudovich/prettier-config": "^1.0.0",
+    "@hudovich/prettier-config": "^1.0.1",
     "@tsconfig/node16-strictest-esm": "^1.0.3",
     "@types/jest": "^29.4.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
