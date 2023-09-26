@@ -6,4 +6,4 @@ export {
 
 export { isNamedColor } from './utils.js'
 
-export type { NamedColor } from './types'
+export type { NamedColor } from './types.js'

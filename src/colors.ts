@@ -2,7 +2,7 @@ import type {
   NamedColors,
   NamedColorsIdentifiers,
   NamedColorsHexs
-} from './types'
+} from './types.js'
 
 const namedColors: NamedColors = {
   aliceblue: '#F0F8FF',
