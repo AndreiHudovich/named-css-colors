@@ -1,8 +1,8 @@
 module.exports = {
   '*.ts': [
-    () => 'npm run lint:tsc',
-    'npm run lint:eslint',
-    'npm run lint:prettier'
+    () => 'pnpm run lint:tsc',
+    'pnpm run lint:eslint',
+    'pnpm run lint:prettier'
   ],
-  '*.json': ['npm run lint:prettier']
+  '*.json': ['pnpm run lint:prettier']
 }
