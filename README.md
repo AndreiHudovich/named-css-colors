@@ -177,4 +177,8 @@ This is a [Pure ESM package](https://gist.github.com/sindresorhus/a39789f98801d9
 
 ## License
 
-MIT License © 2023 [Andrei Hudovich](https://hudovich.dev/)
+MIT License © 2023 [Andrei Hudovich](https://hudovich.dev)
+
+## Check out my other projects
+
+[Submit your website to directories](https://listingcat.com)
