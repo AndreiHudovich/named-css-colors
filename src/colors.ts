@@ -1,8 +1,4 @@
-import type {
-  NamedColors,
-  NamedColorsIdentifiers,
-  NamedColorsHexs
-} from './types.js'
+import type { NamedColors, NamedColorsIdentifiers, NamedColorsHexs } from './types.js'
 
 const namedColors: NamedColors = {
   aliceblue: '#F0F8FF',
@@ -152,12 +148,10 @@ const namedColors: NamedColors = {
   white: '#FFFFFF',
   whitesmoke: '#F5F5F5',
   yellow: '#FFFF00',
-  yellowgreen: '#9ACD32'
+  yellowgreen: '#9ACD32',
 }
 
-const namedColorsIdentifiers = Object.keys(
-  namedColors
-) as NamedColorsIdentifiers
+const namedColorsIdentifiers = Object.keys(namedColors) as NamedColorsIdentifiers
 
 const namedColorsHexs = Object.values(namedColors) as NamedColorsHexs
 

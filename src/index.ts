@@ -1,8 +1,4 @@
-export {
-  getNamedColors,
-  getNamedColorsIdentifiers,
-  getNamedColorsHexs
-} from './colors.js'
+export { getNamedColors, getNamedColorsIdentifiers, getNamedColorsHexs } from './colors.js'
 
 export { isNamedColor } from './utils.js'
 

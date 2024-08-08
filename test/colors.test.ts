@@ -1,16 +1,10 @@
-import {
-  getNamedColors,
-  getNamedColorsIdentifiers,
-  getNamedColorsHexs
-} from '../src/colors'
+import { getNamedColors, getNamedColorsIdentifiers, getNamedColorsHexs } from '../src/colors'
 
 describe('getNamedColors return value', () => {
   const namedColors = getNamedColors()
 
   test('is an object', () => {
-    expect(
-      Object.prototype.toString.call(namedColors) === '[object Object]'
-    ).toBe(true)
+    expect(Object.prototype.toString.call(namedColors) === '[object Object]').toBe(true)
   })
 
   test('properties are read only', () => {
