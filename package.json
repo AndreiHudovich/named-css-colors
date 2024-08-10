@@ -1,6 +1,6 @@
 {
   "name": "named-css-colors",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Modern tree-shakeable CSS named colors utilities: a list of all named colors as names or hex codes, an object of name and hex code pairs, a function to check for named color, a helper union type of all named colors.",
   "type": "module",
   "main": "./dist/index.js",
