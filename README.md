@@ -182,5 +182,5 @@ MIT License © 2024 [Andrei Hudovich](https://hudovich.dev)
 ## Check out my other projects
 
 [Submit your website to directories](https://listingcat.com)  
-[SaaS boilerplates](https://getboilerplates.com)
+[SaaS boilerplates](https://getboilerplates.com)  
 [Analytics for Bluesky](https://blueskymeter.com)
